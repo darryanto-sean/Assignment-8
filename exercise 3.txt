@@ -1,0 +1,16 @@
+Sean Darryanto
+CS81
+
+
+a)
+No change in the javascript file
+
+b) 
+In HTML5, buttons became prevalent and more diverse/shorter than 
+<input type="button"...> with the <button> tag. As I have read: 
+"Button tags offer richer rendering possibilities: the BUTTON element may have content. For example, 
+a BUTTON element that contains an image functions like and may resemble 
+an INPUT element whose type is set to “image”. 
+You can use the <button> element for buttons with various actions 
+or submit a form, however, YOU SHOULD NOT use the input element outside a 
+form or for other action than submit/validate a form.

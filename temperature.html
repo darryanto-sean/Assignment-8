@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JS Temperature converter</title>
+	<head>
+
+	<body>
+		<h1>
+			Temp Conv
+		</h1>
+		<p>
+			<input type="text" id="temp" />
+			<button id="fahrToCels">F to C</button>
+			<button id="celsToFahr">C to F</button>
+		</p>
+		<p id="result"></p>
+	</body>
+
+		<script>
+			var post = function(celcius, fahrenheit){
+				document.getElementById("result").innerHTML = celcius + "\xb0C = " + fahrenheit + "\xb0F";
+			};
+			document.getElementById("fahrToCels").onclick = function(){
+				var f = document.getElementById("temp").value;
+				post((f-32)/1.8, f);
+			};
+			document.getElementById("celsToFahr").onclick = function(){
+				var c = document.getElementById("temp").value;
+				post(c, 1.8*c +32);
+			};
+		</script>
+</html>

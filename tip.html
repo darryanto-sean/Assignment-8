@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Tip Calculator</title>
+	</head>
+
+	<body>
+		<h1>Tip Calculator</h1>
+		<p>
+			<h5>Input total cost:</h5>
+			<input type="number" id="cost"/><br>
+			<h5>Input tip rate in %:</h5>
+			<input type="number" id="rate"/><br>
+			<input type="button" id="calc" value="Calculate the tip"/><br>
+		</p>
+
+		<h5 id="result"></h5>
+	</body>
+
+	<script>
+		document.getElementById("calc").onclick = function(){
+			var cost = document.getElementById("cost").value;
+			var rate = document.getElementById("rate").value;
+			var amount = Math.round(cost*rate/100);
+			document.getElementById("result").innerHTML = "The tip amount is: " + amount;
+		}
+	</script>
+</html>
